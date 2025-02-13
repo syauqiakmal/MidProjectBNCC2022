@@ -1,0 +1,243 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'El Messiri', sans-serif;
+    color: #d1fffb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.SemuaMenu{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    background-color: #04009A;
+    border-bottom: 10px solid #A6FFF2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+#namaSaya{
+    font-size: 2rem;
+    font-family:'Bree Serif', serif;
+    color: #A6FFF2;
+    text-decoration: none;
+}
+
+#aboutMe{
+    font-size: 1rem;
+    color: #A6FFF2;
+    margin-right: 2rem;
+}
+
+#portofolio{
+    font-size: 1rem;
+    color: #A6FFF2;
+    margin-right: 2rem;
+}
+
+#contactform{
+    font-size: 1rem;
+    color: #A6FFF2;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.contactForm{
+    background-color: #04009A;
+}
+
+.judulutama{
+    display: flex;
+    justify-content: center;
+    padding: 7rem 0rem 2rem 0rem;
+    background-color: #04009A;
+    animation: transisi1 2s ease-in;
+}
+
+#judul{
+    font-size: 3rem;
+}
+
+#judul:hover{
+    text-decoration: underline;
+}
+
+.semuaform{
+    text-align: center;
+    background-color: #0F52BA;
+    animation: transisi2 2s ease-in;
+}
+
+#labelname,#labelemail,#labellinkedinform, #labelcomments{
+    padding-top: 2rem;
+    font-size: 1.7rem;
+}
+
+.nama1{
+    padding-top: 2rem;
+}
+
+#name,#email,#linkedinform{
+    width: 90%;
+    color: black;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    height: 2rem;
+    border-radius: 1rem;
+    background-color: #A6FFF2;
+}
+
+#comment{    
+    width: 90%;
+    color: black;
+    font-size: 1.7rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #A6FFF2;
+}
+
+#Kirim{
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    background-color: black;
+    color: ivory;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
+
+#Kirim:hover{
+    text-decoration: underline;
+    background-color: #04009A;
+}
+
+.sosialMedia{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    background-color: #04009A;
+    border-top: 10px solid #A6FFF2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    box-sizing: border-box;
+}
+
+#nama{
+    font-size: medium;
+    margin-top: auto;
+    font-family: 'Sriracha', cursive;
+    margin-left: 1rem;
+}
+
+.instagram1, .github1, .linkedin1{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+
+#instagram{
+    margin-right: 3rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+#github{
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+#linkedin{
+    margin-right: 1rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+@keyframes transisi1{
+    0%{
+        margin-bottom: -40px;
+    }
+    50%{
+        letter-spacing: 5px;
+        margin-bottom: -40px;
+    }
+    100%{
+        letter-spacing: 2px;
+        margin-bottom: -40px;
+    }
+}
+
+
+@keyframes transisi2{
+    from{
+        margin-right: 100%;
+    }
+    to{
+        margin-right: 0%;
+    }
+
+}
+
+@media only screen and (max-width:990px){
+
+    #judul{
+        font-size: 2rem;
+    }
+
+    #labelname,#labelemail,#labellinkedinform, #labelcomments{
+        font-size: 1.2rem;
+    }
+
+    #name,#email,#linkedinform{
+        width: 80%;
+        font-size: 1.7rem;
+        height: 1.5rem;
+    }
+
+    #comment{
+        width: 80%;
+        font-size: 1.7rem;
+    }
+}
+
+@media only screen and (max-width:800px){
+
+    #judul{
+        font-size: 1.5rem;
+    }
+
+    #labelname,#labelemail,#labellinkedinform, #labelcomments{
+        font-size: 1rem;
+    }
+
+    #name,#email,#linkedinform{
+        width: 65%;
+        font-size: 1.4rem;
+        height: 1rem;
+    }
+
+    #comment{
+        width: 65%;
+        font-size: 1.4rem;
+    }
+
+    #kirim{
+        font-size: 0.7rem;
+    }
+
+    #nama{
+        font-size: 0.7rem;
+    }
+    #instagram, #github, #linkedin{
+        font-size: 0.5rem;
+    }
+}

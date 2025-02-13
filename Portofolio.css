@@ -1,0 +1,332 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'El Messiri', sans-serif;
+    color: #d1fffb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.SemuaMenu{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    background-color: #04009A;
+    border-bottom: 10px solid #A6FFF2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+#namaSaya{
+    font-size: 2rem;
+    font-family:'Bree Serif', serif;
+    color: #A6FFF2;
+    text-decoration: none;
+}
+
+#aboutMe{
+    font-size: 1rem;
+    color: #A6FFF2;
+    margin-right: 2rem;
+}
+
+#portofolio{
+    font-size: 1rem;
+    color: #A6FFF2;
+    margin-right: 2rem;
+}
+
+#contactform{
+    font-size: 1rem;
+    color: #A6FFF2;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.Portofolio{
+    width: 100%;
+    padding-top: 7rem;
+    background-color: #0F00FF;
+}
+
+.judul{
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background-color: #0F00FF;
+    animation: transisi1 2s ease-in;
+}
+
+#judulutama{
+    font-size: 3rem;
+}
+
+.judul:hover{
+    text-decoration: underline;
+}
+
+.semuaPortofolio{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0F00FF;
+}
+
+.portofolio1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem 0rem 4rem 0rem;
+    background-color: #0F52BA;
+}
+
+.judul1{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    animation: transisi1 2s ease-in;
+}
+
+.deskripsi1{
+    width: 90%;
+    text-align: justify;
+    padding: 0rem 3rem ;
+    font-size: 1rem;
+    animation: transisi2 2s ease-in;
+}
+
+.foto1{
+    width: 60%;
+    padding-left: 3rem;
+    animation: transisi3 2s ease-in;
+}
+
+.portofolio2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem 0rem 4rem 2rem;
+    background-color: #1CC5DC; 
+}
+
+.judul2{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    animation: transisi1 2s ease-in;
+}
+
+.deskripsi2{
+    width: 90%;
+    text-align: justify;
+    padding: 0rem 3rem;
+    font-size: 1rem;
+    animation: transisi2 2s ease-in;
+}
+
+.foto2{
+    width: 60%;
+    padding-left: 3rem;
+    animation: transisi3 2s ease-in;
+}
+
+.portofolio3{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 4rem 0rem 4rem 2rem;
+    background-color: #3E00FF;
+}
+
+.judul3{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    animation: transisi1 2s ease-in;
+}
+
+.deskripsi3{
+    width: 90%;
+    text-align: justify;
+    padding: 0rem 3rem;
+    font-size: 1rem;
+    animation: transisi2 2s ease-in;
+}
+
+.foto3{
+    width: 60%;
+    padding-left: 3rem;
+    animation: transisi3 2s ease-in;
+}
+
+.sosialMedia{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    background-color: #04009A;
+    border-top: 10px solid #A6FFF2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    box-sizing: border-box;
+}
+
+#nama{
+    font-size: medium;
+    margin-top: auto;
+    font-family: 'Sriracha', cursive;
+    margin-left: 1rem;
+}
+
+.instagram1, .github1, .linkedin1{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+
+#instagram{
+    margin-right: 3rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+#github{
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+#linkedin{
+    margin-right: 1rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+@keyframes transisi1{
+    0%{
+        margin-bottom: -40px;
+    }
+    50%{
+        letter-spacing: 5px;
+        margin-bottom: -40px;
+    }
+    100%{
+        letter-spacing: 2px;
+        margin-bottom: -40px;
+    }
+}
+
+
+@keyframes transisi2{
+    from{
+        margin-left: 70%;
+    }
+    to{
+        margin-left: 0%;
+    }
+
+}
+
+
+@keyframes transisi3{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width:990px){
+    #judulutama{
+        font-size: 2.5rem;
+    }
+    .judul1{
+        font-size: 1.7rem;
+    }
+    .deskripsi1{
+        font-size: 0.7rem;
+    }
+    .judul2{
+        font-size: 1.7rem;
+    }
+    .deskripsi2{
+        font-size: 0.7rem;
+    }
+    .judul3{
+        font-size: 1.7rem;
+    }
+    .deskripsi3{
+        font-size: 0.7rem;
+    }
+
+}
+
+@media only screen and (max-width:800px){
+
+    #judulutama{
+        font-size: 2rem;
+    }
+
+    .portofolio1{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .judul1{
+        font-size: 1.5rem;
+    }
+
+    .deskripsi1{
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .portofolio2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .judul2{
+        font-size: 1.5rem;
+    }
+
+    .deskripsi2{
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    .portofolio3{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .judul3{
+        font-size: 1.5rem;
+    }
+    .deskripsi3{
+        font-size: 1rem;
+        padding-bottom: 2rem;
+    }
+
+    #nama{
+        font-size: 0.7rem;
+    }
+    #instagram, #github, #linkedin{
+        font-size: 0.5rem;
+    }
+}

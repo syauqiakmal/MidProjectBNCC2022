@@ -1,0 +1,351 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'El Messiri', sans-serif;
+    color: #d1fffb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.SemuaMenu{
+    width: 100%;
+    height: 90px;
+    display: flex;
+    background-color: #04009A;
+    border-bottom: 10px solid #A6FFF2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 3rem;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+#namaSaya{
+    font-size: 2rem;
+    font-family:'Bree Serif', serif;
+    color: #A6FFF2;
+    text-decoration: none;
+}
+
+#aboutMe{
+    font-size: 1rem;
+    color: #A6FFF2;
+    margin-right: 2rem;
+}
+
+#portofolio{
+    font-size: 1rem;
+    color: #A6FFF2;
+    margin-right: 2rem;
+}
+
+#contactform{
+    font-size: 1rem;
+    color: #A6FFF2;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.DeskripsiMe{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 7rem 3rem 0rem 3rem;
+    background-color: #0F00FF;
+}
+
+.judul{
+    text-align: center;
+    padding-bottom: 2rem;
+    font-size: 1.5rem;
+    background-color: #0F00FF;
+    animation: transisi1 2s ease-in-out;
+}
+
+.judul:hover{
+    text-decoration: underline;
+}
+
+.foto{
+    text-align: center;
+    padding-bottom: 2rem;
+    background-color: #0F00FF;
+    animation: transisi2 2s ease-in-out;
+}
+
+.deskripsi{
+    text-align: justify;
+    font-size: medium;
+    padding-bottom: 2rem;
+    background-color: #0F00FF;
+    animation: transisi3 2s ease-in-out;
+}
+
+.RiwayatPendidikan{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 4rem 4rem 4rem;
+    background-color: #0F52BA;
+}
+
+.judul2{
+    text-align: center;
+    font-size: large;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #0F52BA;
+    animation: transisi1 2s ease-in;
+}
+
+.judul2:hover{
+    text-decoration: underline;
+}
+
+table{
+    text-align: justify;
+    animation: transisi2 2s ease-in-out;
+}
+
+th{
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border: 2px solid #000000;
+    font-family: 'Sriracha', cursive;
+    background-color: #14279B;
+}
+
+td{
+    font-size: 1rem;
+    padding: 1rem;
+    border: 2px solid #000000;
+    font-family: 'Sriracha', cursive;
+    background-color: #0F52BA;
+}
+
+.BahasaPemograman{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 0rem 4rem 0rem;
+    background-color: #0E49B5;    
+    font-family: 'Sriracha', cursive;
+    background-color: #14279B;
+}
+
+.judul3{
+    text-align: center;
+    font-size: large;
+    padding-bottom: 3rem;
+    animation: transisi3 2s ease-in-out;
+}
+
+.judul3:hover{
+    text-decoration: underline;
+}
+
+.semuabahasa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    animation: transisi3 2s ease-in-out;
+}
+
+
+.sosialMedia{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    background-color: #04009A;
+    border-top: 10px solid #A6FFF2;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    box-sizing: border-box;
+}
+
+#nama{
+    font-size: medium;
+    margin-top: auto;
+    font-family: 'Sriracha', cursive;
+    margin-left: 1rem;
+}
+
+.instagram1, .github1, .linkedin1{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+
+#instagram{
+    margin-right: 3rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+#github{
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+#linkedin{
+    margin-right: 1rem;
+    margin-top: 1rem;
+    font-size: 0.7rem;
+}
+
+@keyframes transisi1{
+    0%{
+        margin-bottom: -40px;
+    }
+    50%{
+        letter-spacing: 5px;
+        margin-bottom: -40px;
+    }
+    100%{
+        letter-spacing: 2px;
+        margin-bottom: -40px;
+    }
+}
+
+
+@keyframes transisi2{
+    from{
+        margin-right: 100%;
+    }
+    to{
+        margin-right: 0%;
+    }
+
+}
+
+
+@keyframes transisi3{
+    0%{
+        opacity: 0;
+        transform: scale(0);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width:990px){
+    .judul{
+        font-size: 1.2rem;
+    }
+
+    .kontent{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .foto{
+        padding-right: 3rem;
+    }
+
+    .deskripsi{
+        width: 50%;
+    }
+
+    .RiwayatPendidikan{
+        padding: 0rem 3rem 2rem 2rem;
+    }
+
+    .judul2{
+        font-size: 1rem;
+    }
+    
+    th{
+        font-size: 1.2rem;
+    }
+
+    td{
+        font-size: 1em;
+    }
+
+    .BahasaPemograman{
+        padding: 1rem 0rem 3rem 0rem;
+    }
+
+    .judul3{
+        font-size: 0.8rem;
+    }
+
+    .semuabahasa{
+        font-size: 0.6rem;
+    }
+
+}
+
+@media only screen and (max-width:800px){
+    .judul{
+        font-size: 1rem;
+    }
+
+    .kontent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .foto{
+        padding-right: 2rem;
+    }
+
+    .deskripsi{
+        width: 90%;
+    }
+
+    .RiwayatPendidikan{
+        padding: 0rem 2rem 1rem 2rem;
+    }
+
+    .judul2{
+        font-size: 0.7rem;
+    }
+    
+    th{
+        font-size: 1rem;
+    }
+
+    td{
+        font-size: 0.7em;
+    }
+
+    .BahasaPemograman{
+        padding: 1rem 0rem 3rem 0rem;
+    
+    }
+
+    .judul3{
+        font-size: 0.7rem;
+    }
+
+    .semuabahasa{
+        font-size: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    #nama{
+        font-size: 0.7rem;
+    }
+    #instagram, #github, #linkedin{
+        font-size: 0.5rem;
+    }
+
+}
